@@ -45,7 +45,7 @@ jobs:
     - name: Build, test, tag, and push dog image to Amazon ECR
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REPOSITORY: clo835assign1_ecr
+        ECR_REPOSITORY: cclo835_dogs
         IMAGE_TAG: dogs
       run: |
         cd dogs
