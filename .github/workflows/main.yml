@@ -30,9 +30,9 @@ jobs:
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY: clo835assign1_ecr
-        IMAGE_TAG: cat
+        IMAGE_TAG: cats
       run: |
-        cd cat
+        cd cats
         ls -ltra
         # Docker build
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
@@ -46,9 +46,9 @@ jobs:
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY: clo835assign1_ecr
-        IMAGE_TAG: dog
+        IMAGE_TAG: dogs
       run: |
-        cd dog
+        cd dogs
         ls -ltra
         # Docker build
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
