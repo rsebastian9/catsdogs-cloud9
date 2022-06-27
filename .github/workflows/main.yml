@@ -46,7 +46,7 @@ jobs:
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY: clo835assign2_dog
-        IMAGE_TAG: dogs
+        IMAGE_TAG: dog
       run: |
         cd dogs
         ls -ltra
